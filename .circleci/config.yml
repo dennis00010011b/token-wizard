@@ -23,17 +23,17 @@ jobs:
       steps:
         - npm run e2eMintedWhitelist
 
-  workflows:
-    version: 2
-    test:
-      jobs:
-        - build
-        - e2eMintedUI:
-            requires:
-              - build
-        - e2eMintedWhitelist:
-            requires:
-              - build
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build
+      - e2eMintedUI:
+          requires:
+            - build
+      - e2eMintedWhitelist:
+          requires:
+            - build
 
 
 
