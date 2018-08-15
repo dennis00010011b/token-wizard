@@ -20,7 +20,6 @@ jobs:
         - image:  circleci/node:latest-browsers
       steps:
         - npm run e2eMintedWhitelist
-
 workflows:
   version: 2
   test:
