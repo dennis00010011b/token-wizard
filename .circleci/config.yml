@@ -7,8 +7,8 @@ jobs:
     working_directory: ~/
 
     steps:
-       - git submodule update --init --recursive --remote
-       - npm run installWeb3
+       - run: git submodule update --init --recursive --remote
+       - run: npm run installWeb3
 
 
   e2eMintedUI:
@@ -28,11 +28,9 @@ jobs:
     test:
       jobs:
         - build
-
         - e2eMintedUI:
             requires:
               - build
-
         - e2eMintedWhitelist:
             requires:
               - build
