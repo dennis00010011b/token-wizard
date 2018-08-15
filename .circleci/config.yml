@@ -33,7 +33,7 @@ jobs:
             requires:
               - build
 
-        - e2eMintedWhitelist
+        - e2eMintedWhitelist:
             requires:
               - build
 
