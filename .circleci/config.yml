@@ -15,6 +15,7 @@ jobs:
     steps:
     - npm run e2eMintedUI
 
+
   e2eMintedWhitelist:
     docker:
     - image:  circleci/node:latest-browsers
