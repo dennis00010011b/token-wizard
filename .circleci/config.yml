@@ -6,8 +6,9 @@ jobs:
     steps:
     - checkout
     - run: ls
-    - run: git submodule update --init --recursive --remote
-    - run: npm run installWeb3
+    command: |
+      git submodule update --init --recursive --remote
+      npm run installWeb3
 
   e2eMintedUI:
     docker:
