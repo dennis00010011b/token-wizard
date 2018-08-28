@@ -5,10 +5,10 @@ jobs:
     - image:  circleci/node:latest-browsers
     steps:
     - checkout
-    - run: ls
-    command: |
-      git submodule update --init --recursive --remote
-      npm run installWeb3
+    - run:
+        command: |
+          git submodule update --init --recursive --remote
+          npm run installWeb3
 
   e2eMintedUI:
     docker:
