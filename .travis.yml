@@ -5,20 +5,13 @@ cache:
   directories:
   - node_modules
   - submodules/poa-web3-1.0
+  - submodules/token-wizard-test-automation
 
 env:
   - TEST_SUITE=e2eMintedUI
-  - TEST_SUITE=e2eMintedWhitelist
-  - TEST_SUITE=e2eMintedMincap
+
   - TEST_SUITE=e2eDutchUI
-  - TEST_SUITE=e2eDutchWhitelist
-  - TEST_SUITE=e2eDutchMincap
-  - TEST_SUITE=reactComponentTests
-  - TEST_SUITE=contractsMinted
-  - TEST_SUITE=contractsDutchPart1
-  - TEST_SUITE=contractsDutchPart2
-  - TEST_SUITE=contractsDutchPart3
-  - TEST_SUITE=contractsDutchPart4
+
 
 install:
 
