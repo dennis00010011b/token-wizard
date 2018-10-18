@@ -23,6 +23,7 @@ env:
 install:
 
 before_script:
+  - git submodule sync
   - git submodule update --init --recursive --remote
   - npm run installWeb3
   - bash ./scripts/generateProxyContracts.sh
